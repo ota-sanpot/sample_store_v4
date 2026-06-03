@@ -167,8 +167,8 @@
     @media (min-width: 768px) { .mobile-cta { display: none; } }
 
     /* ナビ吸着 */
-    .nav-stick { transition: background-color .35s ease, border-color .35s ease, padding .35s ease; }
-    .nav-stick.scrolled { background: rgba(21,17,15,.92); backdrop-filter: blur(10px); border-bottom: 1px solid #3A2E27; }
+    .nav-stick { transition: top .35s ease, background-color .35s ease, border-color .35s ease, padding .35s ease; }
+    .nav-stick.scrolled { top: 0 !important; background: rgba(21,17,15,.92); backdrop-filter: blur(10px); border-bottom: 1px solid #3A2E27; }
     .nav-stick.scrolled .nav-inner { padding-top: 12px; padding-bottom: 12px; }
 
     /* ============ 追記：仕上げ ============ */
@@ -256,7 +256,7 @@
   </div>
 
   <!-- ============================== NAV ============================== -->
-  <nav id="nav" class="nav-stick fixed top-0 left-0 right-0 z-50 text-paper">
+  <nav id="nav" class="nav-stick fixed top-8 left-0 right-0 z-50 text-paper">
     <div class="nav-inner max-w-[1440px] mx-auto px-6 md:px-12 py-5 flex items-center justify-between">
       <a href="#top" class="flex items-center gap-3">
         <span class="text-ember font-mincho font-bold text-xl md:text-2xl leading-none whitespace-nowrap">炭火焼肉<span class="text-paper">◯◯</span><span class="text-sub text-sm align-top">（仮）</span></span>
